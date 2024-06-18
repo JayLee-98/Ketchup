@@ -8,7 +8,7 @@ function Layout() {
         <>
             <Header />
             <Sidebar />
-            <div className="d-flex justify-content-between" style={{height:"100vh", flexDirection:"column"}}>
+            <div className="d-flex justify-content-between" style={{ height: "100vh", flexDirection: "column" }}>
                 <Outlet />
                 <Footer />
             </div>

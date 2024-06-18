@@ -20,9 +20,6 @@ export const callGetMemberAPI = ({ memberNo }) => {
                 Authorization: 'Bearer ' + window.localStorage.getItem('accessToken'),
             },
         }).then((response) => response.json());
-
-      
-
         dispatch({ type: GET_MEMBER, payload: result });
     };
 };
