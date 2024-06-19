@@ -35,6 +35,7 @@ import { decodeJwt } from './utils/tokenUtils';
 import { StreamChat } from 'stream-chat';
 import FindPW from './pages/members/FindPW';
 import Error from './pages/Error';
+import './App.css';
 
 const apiKey = process.env.REACT_APP_STREAM_API_KEY;
 

@@ -1,8 +1,13 @@
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { Chat, Channel, ChannelList, Window, ChannelHeader, MessageList, MessageInput, Thread, LoadingIndicator } from 'stream-chat-react';
 import 'stream-chat-react/dist/css/v2/index.css';
+import { ChannelListContainer, ChannelContainer } from '../../components';
 
 const ChatPage = ({ client, filters, sort }) => {
+  const [createType, setCreateType] = useState('');
+  const [isCreating, setIsCreating] = useState(false);
+  const [isEditing, setIsEditing] = useState(false);
+  
   useEffect(() => {
     if (!client) return;
 
@@ -62,19 +67,33 @@ const ChatPage = ({ client, filters, sort }) => {
 
   return (
     <main id="main" className="main">
-      <Chat client={client} theme='team light'>
-        <ChannelList filters={filters} sort={sort} />
-        <Channel channel={client.channel('messaging', 'common-channel', {
-          members: Array.from(new Set([client.userID, '2405001', '2405003', '2405005'])) // 중복 제거
-        })}>
-          <Window>
-            <ChannelHeader />
-            <MessageList />
-            <MessageInput onChange={handleKeystroke} onSend={handleStopTyping} />
-          </Window>
-          <Thread />
-        </Channel>
-      </Chat>
+      <div className='app__wrapper'>
+        <Chat client={client} theme='team light'>
+          <ChannelListContainer
+            isCreating={isCreating}
+            setIsCreating={setIsCreating}
+            setCreateType={setCreateType}
+            setIsEditing={setIsEditing}
+          />
+          {/* <Channel channel={client.channel('messaging', 'common-channel', {
+            members: Array.from(new Set([client.userID, '2405001', '2405003', '2405005'])) // 중복 제거
+          })}>
+            <Window>
+              <ChannelHeader />
+              <MessageList />
+              <MessageInput onChange={handleKeystroke} onSend={handleStopTyping} />
+            </Window>
+            <Thread />
+          </Channel> */}
+          <ChannelContainer
+            isCreating={isCreating}
+            setIsCreating={setIsCreating}
+            isEditing={isEditing}
+            setIsEditing={setIsEditing}
+            createType={createType}
+          />
+        </Chat>
+      </div>
     </main>
   );
 };
