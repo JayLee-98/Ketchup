@@ -352,6 +352,8 @@ const Calendar = () => {
 
     const transformedEvents = transformScheduleList(filteredScheduleList);
 
+    const REACT_APP_GOOGLE_CALENDAR_API_KEY = process.env.REACT_APP_GOOGLE_CALENDAR_API_KEY;
+
     return (
         <main id="main" className="main">
             <div className="title">
@@ -425,7 +427,7 @@ const Calendar = () => {
                                     events: transformedEvents
                                 },
                                 {
-                                    googleCalendarApiKey: 'AIzaSyDcnW6WejpTOCffshGDDb4neIrXVUA1EAE',
+                                    googleCalendarApiKey: REACT_APP_GOOGLE_CALENDAR_API_KEY,
                                     googleCalendarId: 'ko.south_korea#holiday@group.v.calendar.google.com',
                                     className: 'holiday'
                                 }
