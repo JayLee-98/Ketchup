@@ -10,7 +10,7 @@
 [6. 프로젝트 일정 및 산출물](#6-프로젝트-일정-및-산출물)<br/>
 
 ### 1. 프로젝트 소개
-<img width="814" alt="image" src="https://github.com/user-attachments/assets/831d85d8-0176-4879-b8d1-f51e8f355db9">
+<img width="1000" alt="image" src="https://github.com/user-attachments/assets/5cc4c436-6cae-4d7f-a55d-eb5b8230b426">
 
 ### 2. 기획 배경
 <details>
@@ -26,6 +26,9 @@
 ![Untitled (40)](https://github.com/user-attachments/assets/184c526b-fdab-4fe6-a309-169b017f905d)
 
 ### 4. 시연 영상
+
+
+https://github.com/user-attachments/assets/62bbfcac-8d28-418c-85a7-ab21babc07fa
 
 
 
@@ -62,6 +65,8 @@
 </div>
 
 ### Figma
+<img width="921" alt="image" src="https://github.com/user-attachments/assets/017e2fff-a50f-47a9-aeab-9716276666f6">
+
 
 ### ERD
 ![Untitled (41)](https://github.com/user-attachments/assets/51e4cbbe-912e-43ff-aa15-6f6ea5557f67)
@@ -75,12 +80,18 @@
 ![Frame 1 (5)](https://github.com/user-attachments/assets/e30f4bd6-2894-4ecd-865b-d46577b73551)
 
 ### REST API
+<details>
+  <summary>API 문서</summary>
+  
 ![Group 6](https://github.com/user-attachments/assets/86e78833-cc6e-4bb6-9f18-f573c32bd27f)
 
+</details>
 
 ### 요구 사항 명세
 <details>
   <summary>요구사항 명세서</summary>
+  
+![Group 7](https://github.com/user-attachments/assets/e4eeb1dc-a857-4591-8aca-71681d2cf5a4)
 
 
 </details>
