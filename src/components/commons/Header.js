@@ -33,9 +33,6 @@ function Header() {
             <Nav className="header-nav ms-auto">
                 <ul className="d-flex align-items-center">
                     <li className='nav-item d-flex'>
-                        <Link to="/chatroom" className='bi-envelope nav-icon mr-3' style={{ color: "#EC0B0B"}}/>
-                    </li>
-                    <li className='nav-item d-flex'>
                         <Link to="/chat" className='bi bi-chat nav-icon mr-3' style={{ color: "#EC0B0B"}}/>
                     </li>
                     <li className="nav-item d-flex">
